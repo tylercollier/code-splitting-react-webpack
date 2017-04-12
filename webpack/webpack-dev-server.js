@@ -22,4 +22,4 @@ const devServerConfig = {
 
 const server = new WebpackDevServer(webpack(webpackConfig(env)), devServerConfig);
 
-server.listen(3000, 'localhost');
+server.listen(process.env.PORT, 'localhost');
